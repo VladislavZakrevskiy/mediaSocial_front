@@ -8,7 +8,7 @@ import { getUser } from '../../store/reducers/rtk async/FindUser';
 import { useAddFriendMutation, useSendNotificationMutation } from '../../store/reducers/rtk query/NotificationApi';
 import { Box, Button, CircularProgress, Typography } from '@mui/material';
 import { useGetPostsUserQuery } from '../../store/reducers/rtk query/PostsApi';
-import PostList from '../../../../frontend/src/components/Posts/PostList';
+import PostList from '../../components/Posts/PostList';
 import { is } from '@react-three/fiber/dist/declarations/src/core/utils';
 
 type Props = {}
