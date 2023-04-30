@@ -15,7 +15,7 @@ export class ChatService {
         user: IUser | null, 
         chat_id: string | undefined
         ){
-        socket.current = new WebSocket('ws://localhost:3001')
+        socket.current = new WebSocket('wss://mediasocial.onrender.com/')
           socket.current.onopen = async () => {
               setCon(true)
               console.log('ws open')

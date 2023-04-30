@@ -5,11 +5,11 @@ import axios, { AxiosResponse } from 'axios';
 
 export class AuthService {
     static async login(email:string, password: string): Promise<AxiosResponse<IAuthResponse>> {
-        return axios.post<IAuthResponse>('http://localhost:5000/auth/login', {email, password}, {withCredentials: true})
+        return axios.post<IAuthResponse>('https://mediasocial.onrender.com/auth/login', {email, password}, {withCredentials: true})
     }
 
     static async registration(email:string, password: string): Promise<AxiosResponse<IAuthResponse>> {
-        return axios.post<IAuthResponse>('http://localhost:5000/auth/registration', {email, password}, {withCredentials: true})
+        return axios.post<IAuthResponse>('https://mediasocial.onrender.com/auth/registration', {email, password}, {withCredentials: true})
     }
 
     static async logout(): Promise<void> {
